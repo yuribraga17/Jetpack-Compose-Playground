@@ -1,0 +1,120 @@
+site_name: Jetpack Compose Playground
+repo_name: Jetpack Compose Playground
+
+repo_url: https://github.com/Foso/Jetpack-Compose-Playground
+site_url: https://github.com/Foso/Jetpack-Compose-Playground
+site_dir: 'docs'
+docs_dir: 'mkdocs'
+edit_uri: 'tree/master/mkdocs/'
+theme:
+  name: 'material'
+  language: en
+  custom_dir: 'mkdocs/theme'
+  font:
+    text: Ubuntu
+    code: Jetbrains Mono
+  palette:
+    primary: 'deep-blue'
+    accent: 'deep-purple'
+  feature:
+    - tabs: true
+    - instant
+  icon:
+    logo: material/cloud
+extra:
+  manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/foso'
+    - icon: fontawesome/brands/twitter
+      link: 'https://twitter.com/jklingenberg_'
+    - icon: fontawesome/solid/external-link-alt
+      link: 'http://www.jensklingenberg.de'
+nav:
+  - 'Jetpack Compose':
+      - 'Overview': index.md
+      - 'Cookbook':
+           - 'Overview': cookbook/overview.md
+           - 'Handle changes to a text field': cookbook/textfield_changes.md
+           - 'How to use Compose in a ViewGroup': cookbook/how_to_use_compose_in_viewgroup.md
+           - 'How to create HintTextField': cookbook/hint_edit_text.md
+           - 'How to load an Image': cookbook/loadimage.md
+           - 'How to use an Android View in Compose': cookbook/how_to_use_an_android_view_in_compose.md
+           - 'How to get Android Context': cookbook/get_android_context.md
+           - 'How to detect dark mode': cookbook/detect_darkmode.md
+      - 'Guides & Samples':
+          - 'General':
+              - 'Ambient': general/ambient.md
+              - 'Codelabs': general/codelabs.md
+              - 'Compiler Plugin': general/compiler_plugin.md
+              - 'Compose for:':
+                  - 'Compose for Android Developers': compose_for/android_devs.md
+                  - 'Compose for SwiftUI Developers': compose_for/swiftui_devs.md
+              - 'Compose Lifecycle': general/compose_lifecycle.md
+              - 'Hello World Compose': general/helloworld.md
+              - 'Providers': general/providers.md
+              - 'Modifier': general/modifier.md
+              - 'Preview':
+                  - 'Preview': general/preview/preview.md
+                  - 'PreviewParameter': general/preview/previewparameter.md
+              - 'Roadmap' : general/roadmap.md
+              - 'Project Setup': general/getting_started.md
+              - 'State': general/state.md
+          - 'Foundation':
+              - 'Box': foundation/box.md
+              - 'Canvas': foundation/canvas.md
+              - 'Image': foundation/image.md
+              - 'LazyColumnFor': foundation/lazycolumnfor.md
+              - 'LazyRowFor': foundation/lazyrowfor.md
+              - 'ScrollableRow': foundation/scrollablerow.md
+              - 'ScrollableColumn': foundation/scrollablecolumn.md
+              - 'Shape' : foundation/shape.md
+              - 'Text': foundation/text.md
+              - 'TextField': foundation/textfield.md
+          - 'Layout':
+              - 'Column': layout/column.md
+              - 'ConstraintLayout': layout/constraintlayout.md
+              - 'Row': layout/row.md
+              - 'Stack': layout/stack.md
+          - 'Material':
+              - 'AlertDialog': material/alertdialog.md
+              - 'Button': material/button.md
+              - 'Card': material/card.md
+              - 'Checkbox': material/checkbox.md
+              - 'ModalDrawerLayout': material/modaldrawer.md
+              - 'RadioGroup': material/radiogroup.md
+              - 'Scaffold': material/scaffold.md
+              - 'Slider': material/slider.md
+              - 'Snackbar': material/snackbar.md
+              - 'Switch': material/switch.md
+      - 'Compose Projects': compose_projects.md
+      - 'Contributing': contributing.md
+      - 'Resources': resources.md
+
+markdown_extensions:
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - tables
+  - admonition
+
+plugins:
+  - search
+  - rss
+  - git-revision-date-localized:
+      type: date
+  - minify:
+      minify_html: true

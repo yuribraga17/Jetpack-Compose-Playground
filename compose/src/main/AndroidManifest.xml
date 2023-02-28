@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="de.jensklingenberg.jetpackcomposeplayground.ui.samples">
+
+    <application>
+
+        <activity android:name="de.jensklingenberg.jetpackcomposeplayground.ui.MyComposeActivity" />
+        <activity android:name="androidx.ui.demos.DemoActivity" />
+        <activity android:name="androidx.ui.demos.DemoSettingsActivity" />
+        <activity android:name="androidx.compose.material.studies.rally.RallyActivity" />
+
+    </application>
+</manifest>
